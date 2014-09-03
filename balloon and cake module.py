@@ -1,15 +1,15 @@
 
 def balloon(name):
     print ("I am", name, "and I love Baloons")
-    IfFunc(name)
+    ErosOut(name)
 def cake(name):
     print ("I am", name, "and I hate cakes")
-    IfFunc(name)
-def IfFunc(name):
+    ErosOut(name)
+def ErosOut(name):
     if name == 'eros':
-        print ('yeh', name)
+        print ('yeh', name, 'bosen gw liat muka lu')
     else:
-        print ('lafyu')
+        print ('untung bukan eros. jangan kasitau eros ya.')
 
 print ('cake and baloons module is ready')
 print ('by the way')
