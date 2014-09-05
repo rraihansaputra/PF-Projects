@@ -1,3 +1,4 @@
+#!/Applications/IDLE.app
 def balloon(name):
     print ("I am", name, "and I love Baloons")
     ErosOut(name)
@@ -25,7 +26,7 @@ def modulecall(modulename, name):
 
 print ('cake and balloons module is ready to deploy')
 print ('have fun')
-input ("please press enter ")
+#input ("please press enter ")
 
 def start():
     name = input("what is your name? ")
