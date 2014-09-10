@@ -1,7 +1,6 @@
 import turtle
 
 def turtle_setup():
-    import turtle
     turtle.pendown()
     print('Turtle is ready')
 
@@ -20,13 +19,16 @@ def start():
     side = eval(input('Please enter sides desired for the polygon.. '))
     color = input('Please type the color of the polygon.. ')
     turtle.color(color)
-    print('Side will be ', side, 'long. Exterior angle calculated is ', anglecalculation(side), '.')
+    print('Side will be ', length, 'long. Exterior angle calculated is ', anglecalculation(side), '.')
     input('Ready. Please press Enter to continue..')
-    draw(side, length)
+    #draw(side, length)
+    while length > 0:
+        length = length - 10
+        draw(side, length)
     ask = input('Do you want to draw another polygon? (Y/N)')
     if ask== 'Y':
         start()
     else:
-        quit
+        print('bye.')
 
 start()
